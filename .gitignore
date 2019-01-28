@@ -8,7 +8,6 @@ terraform/.terraform/*
 terraform/*/.terraform/*
 terraform/.credstash/*.tfvars.json
 /.gradle/
-gradle/gradle-wrapper.jar
 *.ipr
 *.iml
 .idea/
@@ -18,7 +17,6 @@ out/
 *node_modules*
 *.class
 *.log
-*.jar
 *.war
 *.zip
 *.tar.gz
