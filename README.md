@@ -1,19 +1,18 @@
-##Demo application for producing and consuming from ActiveMQ
+## Demo application for producing and consuming from ActiveMQ
 
-###
-Build application
+### Build application
 `./gradlew bootJar`
 
 It will be located in `build/libs/amazon-mq-demo-0.1.0.jar`
 
-###Start consumer:
+### Start consumer:
 `java -jar build/libs/amazon-mq-demo-0.1.0.jar --spring.profiles.active=consumer`
 
 
-###Start producer:
+### Start producer:
 `java -jar build/libs/amazon-mq-demo-0.1.0.jar --spring.profiles.active=producer`
 
-###Partitioning
+### Partitioning
 In order to check partitioning, you can start two consumers at the same time
 
 To play with partitioning you can add parameters:
@@ -23,7 +22,7 @@ To play with partitioning you can add parameters:
 This will produce 5 messages: 3 with one partition key and 2 with other. 
 So if you have two consumers running each will receive only messages with same partition
 
-###Integrity check mode
+### Integrity check mode
 Both producer and consumer can be launched with flag
 `--application.delivery.check=true`
 
