@@ -1,0 +1,12 @@
+spring:
+    activemq:
+        broker-url: tcp://localhost:61616
+        user:
+        password:
+application:
+    queue:
+        name: testqueue
+    producer:
+        partitions: 1
+    total:
+        messages: 1
