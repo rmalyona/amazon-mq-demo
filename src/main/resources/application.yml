@@ -5,8 +5,4 @@ spring:
         password:
 application:
     queue:
-        name: testqueue
-    producer:
-        partitions: 1
-    total:
-        messages: 1
+        name: secured

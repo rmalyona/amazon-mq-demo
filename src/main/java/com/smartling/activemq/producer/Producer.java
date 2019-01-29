@@ -16,13 +16,13 @@ public class Producer
     @Value("${application.queue.name}")
     private String queueName;
 
-    @Value("${application.producer.partitions}")
+    @Value("${application.producer.partitions:1}")
     private int partitions;
 
-    @Value("${application.total.messages}")
+    @Value("${application.total.messages:5}")
     private int totalMessages;
 
-    @Value("${application.delivery.check}")
+    @Value("${application.delivery.check:false}")
     private boolean check;
 
     private final JmsTemplate jmsTemplate;
